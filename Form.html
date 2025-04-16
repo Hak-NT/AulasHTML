@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+</head>
+<body>
+    <form method="post" id="form_Teste" action="mailto:contato@gmail.com">
+        <fieldset>
+            <legend style="background-color: red;">Dados Pessoais:</legend>
+            <label for="formNome">Nome:</label><br>
+            <input id="formNome" type="text" name="nome" size="50" style="background-color: black; color: red;"><br>
+
+            <label for="formSigno">Signo:</label><br>
+            <input id="formSigno" type="text" name="Signo" size="40"  style="background-color: black; color: red;">
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+            <legend style="background-color: red;">Endereço:</legend>
+                <p>Selecione a sua Região:</p>
+                <input id="forZn" type="radio" name="regiao" value="Zn">
+                <label for="forZn">Zona Norte</label>
+            <br>
+                <input id="forZo" type="radio" name="regiao" value="Zo">
+                <label for="forZo">Zona Oeste</label>
+            <br>
+                <input id="forZl" type="radio" name="regiao" value="Zl">
+                <label for="forZl">Zona Leste</label>
+            <br>
+                <input id="forZs" type="radio" name="regiao" value="Zs">
+                <label for="forZs">Zona Sul</label>
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+            <legend style="background-color: red;">Locomoção:</legend>
+                <p>Quais são os meios de transporte que você utiliza:</p>
+                <input id="forJato" type="checkbox" name="regiao" value="Jato">
+                <label for="forJato">Jatinho</label>
+            <br>
+                <input id="forOni" type="checkbox" name="regiao" value="Oni">
+                <label for="forOni">Ônibus</label>
+            <br>
+                <input id="forCar" type="checkbox" name="regiao" value="Car">
+                <label for="forCar">Carro</label>
+            <br>
+                <input id="forHeli" type="checkbox" name="regiao" value="Heli">
+                <label for="forHeli">Helicóptero</label>
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+            <legend style="background-color: red;">Preferências:</legend>
+                <label for=time>Selecione seu time:</label>
+                <select id="time" name="time" style="background-color: black; color: red;">
+                    <option value="nenhum">Nenhum</option>
+                    <option value="RealM">Real Madrid</option>
+                    <option value="Barcel">Barcelona</option>
+                    <option value="Corin">Corinthians</option>
+                    <option value="Liverp">Livepool</option>
+                    <option value="Psg">Paris Saint Germani</option>
+                    
+                </select>
+
+                <br><br>
+
+            <label for="forMarcas">Escolha sua marca:</label>
+            <input id="forMarcas"  style="background-color: black; color: red;" name="marca" list="marca" placeholder="Digite sua marca">
+            <datalist id="marca">
+                <option value="Audi">Audi</option>
+                <option value="Porsche">Porsche</option>
+                <option value="Jaguar">Jaguar</option>
+                <option value="Nissan">Nissan</option>
+                <option value="Lamborghini">Lamborghini</option>
+            </datalist>
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+            <legend style="background-color: red;">Opnião:</legend>
+            <p>Sugestões, elogios e criticas</p>
+            <textarea name="mensagem" rows="10" cols="50" placeholder="Deixe sua mensagem aqui!" required style="background-color: black; color: red"></textarea>
+        </fieldset>
+        <input type="submit" value="Enviar" style="background-color: red;">
+</body>
+</html>
